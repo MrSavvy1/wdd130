@@ -1,16 +1,25 @@
-#every{
+#content{
   max-width: 1600px;
+  width:100%;
   margin: 0 auto;
+  text-align: center;
+  display: block;
   
 }
 #hero-img{
-  width = 100%;r
+  width = 100%;
 }
 
 #background{
   height: 725px;
   
-} 
+}
+/*.card-img, footer, main{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  
+} */
 
 nav a{
   text-align:center;
