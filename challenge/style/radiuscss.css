@@ -1,0 +1,10 @@
+h1{
+  background-image: url("images/main1.jpg");
+  background-repeat: no-repeat;
+  background-color: blue;
+  
+}
+footer{
+  background-image: url("images/footer.jpg");
+  background-repeat: no-repeat;
+}
