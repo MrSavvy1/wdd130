@@ -79,7 +79,7 @@ nav a:hover{
 }
 .book{
   background-color: navy;
-  color: white;
+  color: yellow;
   text-decoration:none;
   font-size: 18px;
   padding: 15px 30px;
@@ -88,7 +88,7 @@ nav a:hover{
 } 
 
 .join{
-  background-color:  black;
+  background-color: navy;
   color: yellow;
   text-decoration:none;
   font-size: 18px;
@@ -164,9 +164,7 @@ footer a:hover{
   
 }
 
-.mountains{
-  width: 100%;
-}
+
 
 #logo-link{
   padding-top: 5px;
