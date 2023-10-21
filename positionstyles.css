@@ -160,6 +160,9 @@
   width: 100%; 
   height: 200px; 
   background-color: gold; 
+  grid-column: 1 / 3;
+ 
+ 
 
 
 } 
