@@ -5,11 +5,12 @@ nav{
   justify-content: space-around;
 }
 
+
 #hero{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   margin-top:-100px;
-} MC
+} 
 #hero-msg{
    grid-column: 2/3;
   grid-row: 1/2;
@@ -33,6 +34,10 @@ section h2 {
   font-size: 2em;
   margin-top: 10px;
   
+}
+
+h2 {
+  margin: 0;
 }
 .msg h2{
   font-family: 'mooli', Arial, serif;
@@ -85,6 +90,7 @@ main section{
 
 body{
   background-color: skyblue;
+  font-size: 22px;
   padding: 0;
   margin: 0;
 }
@@ -115,7 +121,9 @@ nav a:hover{
   margin-top: 50px;
   border-radius: 5px;
 }
-
+footer p a:hover {
+  text-decoration-line: underline;
+}
 
 .book:hover{
   background-color: white;
@@ -177,7 +185,7 @@ footer a:hover{
   color: red;
 }
 
-.logo{
+#logo{
   width: 80px;
 }
 
@@ -277,7 +285,10 @@ main section img {
     transform: scale(1.1);
 }
 
-
+.home-grid{
+  display: grid;
+  grind-template-columns: repeat(10, 1fr);
+}
 
 
 
