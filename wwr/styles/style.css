@@ -3,6 +3,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav{
   display: flex;
   justify-content: space-around;
@@ -22,6 +23,8 @@ header{
   display: grid;
   grid-template-columns: 150px auto;
 }
+=======
+>>>>>>> parent of 5e36ad8 (Recap)
 =======
 >>>>>>> parent of 5e36ad8 (Recap)
 section h1 {
@@ -190,6 +193,7 @@ footer a:hover{
 #logo-link{
   padding-top: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-self: center;
   align-self: center;
 }
@@ -197,6 +201,8 @@ footer a:hover{
   
 
 =======
+=======
+>>>>>>> parent of 5e36ad8 (Recap)
 }
 >>>>>>> parent of 5e36ad8 (Recap)
 footer .social img   {
@@ -222,6 +228,7 @@ footer .social img   {
 
 main section img {
     box-sizing: border-box;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -326,6 +333,9 @@ main section img {
         margin-top: 25px;
     }
 }
+=======
+}
+>>>>>>> parent of 5e36ad8 (Recap)
 =======
 }
 >>>>>>> parent of 5e36ad8 (Recap)
