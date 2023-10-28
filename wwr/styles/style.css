@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
 
+<<<<<<< HEAD
 nav{
   display: flex;
   justify-content: space-around;
@@ -21,6 +22,8 @@ header{
   display: grid;
   grid-template-columns: 150px auto;
 }
+=======
+>>>>>>> parent of 5e36ad8 (Recap)
 section h1 {
   
   font-family: mooli, Arial, serif;
@@ -47,7 +50,6 @@ section h2 {
 
 #hero-img{
   width: 100%;
- 
 }
 
 #background{
@@ -69,7 +71,6 @@ nav a{
 }
 
 #hero-msg h4{
-  color:white;
   text-align:center;
 }
 
@@ -162,12 +163,7 @@ h4{
 footer{
   color: yellow;
   padding: 25px 50px;
-  background-color: #6f7364;
-  padding: 25px 50px;
-  margin-top: 200px; 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  
 }
 footer a{
   color: yellow;
@@ -193,12 +189,16 @@ footer a:hover{
 
 #logo-link{
   padding-top: 5px;
+<<<<<<< HEAD
   justify-self: center;
   align-self: center;
 }
 
   
 
+=======
+}
+>>>>>>> parent of 5e36ad8 (Recap)
 footer .social img   {
   padding-top: 15px;
 }
@@ -222,6 +222,7 @@ footer .social img   {
 
 main section img {
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 #hero-box{
@@ -325,3 +326,6 @@ main section img {
         margin-top: 25px;
     }
 }
+=======
+}
+>>>>>>> parent of 5e36ad8 (Recap)
