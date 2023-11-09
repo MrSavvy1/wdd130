@@ -290,7 +290,31 @@ main section img {
   grid-template-columns: repeat(10, 1fr);
 }
 
+/* blog page */
 
+/* blog page */
+
+/* blog page */
+#first{
+  dislpay: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#firstgrid{
+  grid-column:1/2;
+}
+#secondgrid{
+  grid-column:2/3;
+}
+#firstgrid img{;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+#thirdgrid{
+  grid-column:1:2;
+}
+#fourthgrid{
+  grid-column:2/3;
+}
 
 
 @media screen and (max-width: 900px) {
