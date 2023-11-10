@@ -4,7 +4,7 @@
   /* This is the parent of the activity 1 boxes. */
 
   display: grid;
-  grid-teplate-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 20px;
 }

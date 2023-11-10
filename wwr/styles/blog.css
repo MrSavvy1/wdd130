@@ -1,0 +1,40 @@
+/*
+.man{
+  max-width: 500px;
+  
+
+}
+*/
+.man{
+  dislpay: grid;
+  grid-template-columns: 200px 120px 120px auto;
+}
+
+.firstgrid{
+  grid-column:1/2;
+  grid-row:1/2;
+  
+}
+.secondgrid p{
+  color:white;
+  background-color: red;
+  padding: 5px;
+}
+.secondgrid{
+  grid-column:2/3;
+  width: 50%;
+  grid-row:1/2;
+}
+#firstgrid img{
+  width: 50%;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+/*
+.thirdgrid{
+  grid-column:1:2;
+  grid-row: 2/3;
+}
+.fourthgrid{
+  grid-column:2/3;
+  grid-row: 2/3;
+} */
