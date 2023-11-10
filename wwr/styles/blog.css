@@ -1,7 +1,9 @@
 .man{
+  max-width: 1600px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: repeat(4fr, 1fr);
+  gap: 10px;
 }
 
 .firstgrid{
@@ -12,12 +14,11 @@
 
 
 .secondgrid{
+  
   grid-column:3/4;
   grid-row:1/2;
 } 
 .firstgrid img{
-  width: 100%;
-  height: 100%;
   box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -25,7 +26,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);*/
   
-}
+
 .thirdgrid{
   grid-column:1/3;
   grid-row: 2/3;
@@ -33,6 +34,7 @@
 .fourthgrid{
   grid-column:3/4;
   grid-row: 2/3;
+  background-color: #orange;
 } 
 
 /* second part  */
@@ -45,11 +47,14 @@
   
 }
 .two{
-  width: 100%;
-  
+  width: 400px;
   grid-column: 2/3;
   grid-row: 3/4;
+
+  
 }
+
+
 .three{
   grid-column: 3/4;
   grid-row: 3/4;

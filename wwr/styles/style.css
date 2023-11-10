@@ -296,8 +296,140 @@ main section img {
 
 /* blog page */
 
+.man{
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(4fr, 1fr);
+  gap: 10px;
+}
 
-/*
+.firstgrid{
+  grid-column:1/3;
+  grid-row:1/2;
+
+}
+
+
+.secondgrid{
+
+  grid-column:3/4;
+  grid-row:1/2;
+  padding-left: 20px;
+  line-height: 1.5em;
+  border-left :  10px solid #6f7364;
+} 
+.firstgrid img{
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+/*.second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);*/
+
+
+.thirdgrid{
+  
+  border-radius: 5px;
+  margin: 5px;
+  
+  
+  grid-column:1/3;
+  grid-row: 2/3;
+  border-width: 5px 0px 5px 0px;
+  border-style: solid;
+  border-color: navy;
+  padding: 20px;
+  
+}
+.fourthgrid{
+  grid-column:3/4;
+  grid-row: 2/3;
+  background-color:brown;
+  color:gold;
+  
+  
+} 
+
+.fourthgrid h5 {
+  
+  font-size: 35px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #navy;
+  color:white;
+}
+/* second part  */
+
+
+
+.one{
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+}
+.two{
+  width: 400px;
+
+  grid-column: 2/3;
+  grid-row: 3/4;
+  
+
+
+}
+
+.two p{
+  color:white;
+  background-color: #6f7364;
+}
+.three{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+
+ul {
+
+  background-color:grey;
+  text-align: center;
+  backface-visibility: #white;
+  list-style-type: none; /* Remove bullets */
+  
+}
+
+ul h4{
+  text-align:center;
+  font-size: 30px;
+  color: #6f7364;
+  background-color:white;
+  padding:5px;
+  
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  width: 100%;
+  
+}
+header {
+  display: grid;
+  width: 100%;
+  
+}
+
+
+/* blog page end*/
+
+/* blog page end */
+
+/* blog page end*/
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -340,4 +472,3 @@ main section img {
         margin-top: 25px;
     }
 }
-*/
