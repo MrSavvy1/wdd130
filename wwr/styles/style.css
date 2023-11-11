@@ -349,6 +349,7 @@ main section img {
   grid-row: 2/3;
   background-color:brown;
   color:gold;
+  padding:10px;
   
   
 } 
@@ -376,7 +377,7 @@ main section img {
 
 }
 .two{
-  width: 400px;
+ /* width: 400px;*/
 
   grid-column: 2/3;
   grid-row: 3/4;
@@ -388,6 +389,9 @@ main section img {
 .two p{
   color:white;
   background-color: #6f7364;
+  border-radius: 5px;
+  border: 10px solid #d9c2a3;
+  padding:10px;
 }
 .three{
   grid-column: 3/4;
