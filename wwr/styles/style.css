@@ -315,14 +315,16 @@ main section img {
 
   grid-column:3/4;
   grid-row:1/2;
-  padding-left: 20px;
-  line-height: 1.5em;
+  padding-left: 10px;
+  /*line-height: 1.5em;*/
   border-left :  10px solid #6f7364;
 } 
-.firstgrid img{
+.firstgrid{
   box-shadow: 5px 5px 10px #6f7364;
 }
-
+img{
+  box-sizing:none;
+}
 /*.second {
   display: grid;
   grid-template-columns: repeat(3, 1fr);*/
@@ -407,6 +409,9 @@ ol h4{
   background-color:white;
   padding:5px;
   
+}
+.foot{
+  margin-top: 5px;
 }
 
 /* blog page end*/
