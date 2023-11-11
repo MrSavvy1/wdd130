@@ -376,7 +376,7 @@ img{
 
 }
 .two{
-  width: 400px;
+  width: 100%;
 
   grid-column: 2/3;
   grid-row: 3/4;
