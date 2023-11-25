@@ -1,0 +1,61 @@
+.man{
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(4fr, 1fr);
+  gap: 10px;
+}
+
+.firstgrid{
+  grid-column:1/3;
+  grid-row:1/2;
+  
+}
+
+
+.secondgrid{
+  
+  grid-column:3/4;
+  grid-row:1/2;
+} 
+.firstgrid img{
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+/*.second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);*/
+  
+
+.thirdgrid{
+  grid-column:1/3;
+  grid-row: 2/3;
+}
+.fourthgrid{
+  grid-column:3/4;
+  grid-row: 2/3;
+  background-color: #orange;
+} 
+
+/* second part  */
+
+
+  
+.one{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  
+}
+.two{
+  width: 400px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+
+  
+}
+
+
+.three{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}

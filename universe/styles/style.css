@@ -1,23 +1,17 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
   @import url('https://fonts.googleapis.com/css2?family=Acme&family=Sansita&display=swap');
 
 
 
 :root {
-  /* change the values below to your colors from your palette */
   --primary-color: #6F8AB7;
   --secondary-color: #202C59;
   --accent1-color: #DB7F8E;
   --accent2-color: #D19C1D;
   --accent3-color: #FCFFF7;
 
-  /* change the values below to your chosen font(s) */
   --heading-font: "Sanista", Helvetica, sans-serif;
   --paragraph-font: Acme, serif;
 
-  /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #202C59;  /* headlines on a white background */ 
   --headline-color-on-color: #6F8AB7; /* headlines on a colored background */ 
   --paragraph-color-on-white: #DB7F8E; /* paragraph text on a white background */ 
@@ -30,25 +24,32 @@ Fonts are separated by a | */
 }
 
 
-/*  Look around below...but DON'T CHANGE ANYTHING! */
+
 
 body {
-  max-width: 1200px;
-  padding: 1em;
+  margin: 0;
+  padding: 0;
   font-size: 22px;
-  text-align: center;
   background-color: var(--primary-color);
-  margin: 0 auto;
   
+  
+}
+#tent{
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 img {
   display: block;
   margin: 0 auto;
 }
+h1 {
+  font-size: 2em;
+}
 
 #rocket{
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -60,19 +61,14 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   text-align: center;
 }
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
+
+
 
 header {
-  padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
-  
   background-color: var(--nav-background-color);
-  width: 100vw;
+  border-bottom: 10px solid #DB7F8E;
   display:grid;
   grid-template-columns: 150px auto;
 }
@@ -90,18 +86,18 @@ nav  {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--nav-background-color);
-  line-height: 2em;
+  line-height: 4em;
   text-align: center;
   font-size: 1.2em;
+  justify-content: space-around;
 
 }
 nav a {
-  
   min-width: 120px;
   text-decoration: none;
+  color:#6F8AB7;
   
 
 }
@@ -112,22 +108,27 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+aside p{
+  background-color: #202C59;
+}
 
 #factbox{
   display: grid;
-  grid-template-columns: 400px 1fr;
-  width: 70vw;
+  grid-template-columns: 10em 1fr;
+  width: 80vw;
   grid-column-gap: 15px;
   margin-top: 1em;
   margin-bottom: 2em;
   margin-right: 1em;
   align-items: center;
+  text-align: center;
 }
 
 #factbox img{
   width: 80%;
   height: 60%;
 }
+
 .page{
   background-color: #FCFFF7;
   border-width: 0px 10px 10px 0px;
@@ -136,10 +137,10 @@ nav a:hover {
   
 }
 
+
 .heros{
   border: 15px solid #202C59;
   color: #FCFFF7;
-  margin-top: 10em;
   border-radius: 5px;
 }
 
@@ -148,16 +149,33 @@ nav a:hover {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-teplate-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
 }
 
 #last img{
   width: 40vw;
+  border: 7px solid #FCFFF7;
 }
+
+
 #last h2{
   grid-column:1/4;
   grid-row:1/2;
 }
+
+#last aside p{
+  transition: background-color 0.3  ease-in-out;
+}
+
+#last aside p:hover{
+  background-color: #FCFFF7;
+}
+
+footer h3 a{
+  color:  #FCFFF7;
+}
+
+
 footer{
   background-color: #202C59;
   color: #FCFFF7;
@@ -167,6 +185,57 @@ footer{
   margin-top: 2em;
   display: flex;
   flex-direction: row;
-  
+  justify-content: space-around;
+  align-items: center;
 
+}
+
+
+#media{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+ 
+  #rocket, .heros {
+    display: block;
+    height: auto;
+  }
+  
+  nav {
+    
+    max-height: 300px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  #rocket {
+    margin-top: 0;
+  }
+
+  footer {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  #factbox, #last{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0 auto;
+  }
 }
