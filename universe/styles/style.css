@@ -214,6 +214,7 @@ footer{
   }
   
   nav {
+    flex-direction: column;
     
     max-height: 300px;
   }
