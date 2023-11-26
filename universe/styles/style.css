@@ -10,7 +10,7 @@
   --accent3-color: #FCFFF7;
 
   --heading-font: "Sanista", Helvetica, sans-serif;
-  --paragraph-font: Acme, serif;
+  --paragraph-font: "Acme", serif;
 
   --headline-color-on-white: #202C59;  /* headlines on a white background */ 
   --headline-color-on-color: #6F8AB7; /* headlines on a colored background */ 
@@ -54,7 +54,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
+  font-family: "Sanista", Helvetica, sans-serif;
   color: var(--headline-color-on-white);
 }
 
@@ -77,7 +77,7 @@ header {
 
 
 p {
-  font-family: var(--paragraph-font);
+  font-family: "Acme", serif;
   color: var(--paragraph-color-on-white);
   padding: 2em;
 }
@@ -164,7 +164,7 @@ aside p{
 }
 
 #last aside p{
-  transition: background-color 0.3  ease-in-out;
+  transition: background-color 0.3s  ease-in-out;
 }
 
 #last aside p:hover{
@@ -215,7 +215,7 @@ footer{
   
   nav {
     flex-direction: column;
-    max-height: auto;
+    max-height: 350px;
   }
   
   nav a {
