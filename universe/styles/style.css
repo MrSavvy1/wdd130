@@ -203,8 +203,18 @@ footer h3 a:hover{
   background-color: #FCFFF7;
 }
 
-
-
+/*===========================================Web_component======================================*/
+#fork{
+  border-radius: 50%;
+}
+button{
+  border-radius: 20%;
+  margin-top: 30px;
+  color:#DB7F8E;
+}
+#mydiv{
+  display:none;
+}
 
 
 
