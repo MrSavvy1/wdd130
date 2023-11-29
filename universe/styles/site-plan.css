@@ -13,7 +13,7 @@ Fonts are separated by a | */
   --accent3-color: #FCFFF7;
 
   --heading-font: "Sanista", Helvetica, sans-serif;
-  --paragraph-font: Acme, serif;
+  --paragraph-font: "Acme", serif;
 
   --headline-color-on-white: #202C59;  /* headlines on a white background */ 
   --headline-color-on-color: #6F8AB7; /* headlines on a colored background */ 
