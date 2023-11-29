@@ -204,19 +204,31 @@ footer h3 a:hover{
 }
 
 /*===========================================Web_component======================================*/
-#fork{
+.fork{
+  
+  margin: 0 auto;
+  text-align: center;
+}
+.fork img{
   border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+#tex{
+  text-align: center;
 }
 button{
-  border-radius: 20%;
-  margin-top: 30px;
+  margin-top: 40px;
   color:#DB7F8E;
 }
 #mydiv{
   display:none;
 }
 
-
+#log{
+  height: 200px;
+  width: 200px;
+}
 
 
 
@@ -224,8 +236,8 @@ button{
 @media screen and (max-width: 900px) {
   #log{
     margin-top: 2em;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
   }
   #hide{
     background-color: #DB7F8E;
@@ -248,14 +260,15 @@ button{
     flex-direction: column;
     max-height: 350px;
     font-size: 18px ;
+    
   }
   
   nav a {
     display: block;
-    padding: 5px;
     max-height: 100px;
     padding-left: 40%;
     padding-right: 40%;
+    text-align: center;
   }
 
   #rocket {
@@ -273,5 +286,10 @@ button{
   height: auto;
   margin: 0 auto;
   }
-  
+  .fork img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+ 
 }
