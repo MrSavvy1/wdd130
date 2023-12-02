@@ -269,7 +269,7 @@ footer h3 a:hover{
   color:var(--primary-color);
   padding:10px;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 10px;
 } 
 .fourthgrid a{
   text-decoration: none;
@@ -295,7 +295,6 @@ footer h3 a:hover{
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width:100%;
   border-bottom: 5px solid var(--accent2-color);
   
 
@@ -418,7 +417,7 @@ button{
   #hide{
     background-color: #DB7F8E;
     height: 5px;
-    width: auto;
+    width: 100%;
     margin: 10px 0px 10px 0px;
   }
 
@@ -434,7 +433,6 @@ button{
   
   nav {
     flex-direction: column;
-    max-height: 350px;
     font-size: 18px ;
     
   }
@@ -473,10 +471,17 @@ button{
     height: auto;
     margin: 0 auto;
   }
+  .fourthgrid{
+    max-width: 600px;
+  }
   .fifthgrid {
     display: none;
     margin: 2px;
     border: none;
+    max-width: 500px;
+  }
+  .fifthgrid div img{
+    max-width: 80%;
   }
   #new{
     display:none;
