@@ -4,22 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Universe</title>
-    <link href="style.css" rel="stylesheet" type="text/css" >
-
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
   </head>
   <body>
+    <div id="tent">
     <header>
-      <a href="index.html"><img src="images/log.png" alt="logo" width="150" height="150"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="planets.html">Planets</a></li>
-          <li><a href="galaxies.html">Galaxies</a></li>
-        </ul>
-      </nav>
+      <a href="index.html"><img id ="log" src="images/log.png" alt="logo" ></a>
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="planets.html">Planets</a>
+        <a href="galaxies.html">Galaxies</a>
+      </nav> 
     </header>
     <main>
-       <div class = "man">
+       <div class = "man" id ="mane">
       <!--first section of my grid   -->
          <img class ="firstgrid"  src ="images/galaxy2.jpg" alt="blog intro">
         
@@ -43,7 +42,7 @@
         </ol>
         
         <section  class = "thirdgrid">
-          <h4>_Galactic wonders </h4>
+          <h4>Galactic wonders </h4>
           <h5>Black Holes</h5>
           <p>
             
@@ -53,30 +52,41 @@
             <p>Nebulae are vast clouds of gas and dust where stars are born. The Orion Nebula, for example, is a stellar nursery with young, hot stars illuminating the gas around them.</p>
             
 <h5>Galactic Center:</h5>
-            <p>At the heart of the Milky Way lies a supermassive black hole, known as Sagittarius A*, surrounded by a dense concentration of stars. Observing this region provides insights into the dynamics of galactic centers.
+            <p>At the heart of the Milky Way lies a supermassive black hole, known as Sagittarius, surrounded by a dense concentration of stars. Observing this region provides insights into the dynamics of galactic centers.
           </p>
         </section>
         <section class= "fourthgrid">
           <h4>Resourses </h4>
-          <p>
-            
-            NASA's Astronomy Picture of the Day: <a href= "https://apod.nasa.gov/apod/" target ="_blank">https://apod.nasa.gov/apod/</a></p>
-<p>Sky & Telescope: <a href="https://skyandtelescope.org/" target = "_blank">https://skyandtelescope.org/</a></p>
-<p>European Space Agency (ESA) - Space Science: <a href ="https://www.esa.int/Science_Exploration/Space_Science" target ="_blank">https://www.esa.int/Science_Exploration/Space_Science</a></p>
+          <p>NASA's Astronomy Picture of the Day: <a href= "https://apod.nasa.gov/apod/" target ="_blank">https://apod.nasa.gov/apod/</a></p>
+            <p>Sky & Telescope: <a href="https://skyandtelescope.org/" target = "_blank">https://skyandtelescope.org/</a></p>
+            <p>European Space Agency (ESA) - Space Science: <a href ="https://www.esa.int/Science_Exploration/Space_Science" target ="_blank">https://www.esa.int/Science_Exploration<br>/Space_Science</a></p>
 
           
           
         </section>
-         <section >
-           <img class = "fifthgrid" src ="images/galaxy.jpg" alt="blog intro">
+         <div class = "fifthgrid" id ="fifth">
+          <div>
+             <img src ="images/telescope.jpg" alt="blog intro" width ="400px" height ="400px">
+    
            <h4 > Galaxy </h4>
-           <img class = "sixthgrid" src ="images/nebula.jpg" alt="blog intro"><h4>Nebula</h4>
-         </section>
+          </div>
+ 
+           <div>   
+           <img src ="images/nebula.jpg" alt="blog intro" width ="400px" height ="400px"><h4>Nebula</h4></div>
+           
+ 
+         </div>
+         <div id = 'new'></div>
+         
+         
+         
       
       <!-- last part of my blog -->
-           <img  class="one" src="images/galax.jpg"  alt="Vacation"> 
+           <img  class="one" src="images/saturn.jpg"  alt="Vacation"> 
         
         <section class="two">
+          <div class = "fork"> <button onclick = "myfunc()">Click Here for Pictures</button></div>
+       
           <h5>Astronomical phenomena </h5>
         <p>
           
@@ -93,15 +103,39 @@
     </div>
     </main>
     <footer>
-      <section>
-        <h5><a href ="site-plan.html">Site plan</a></h5>
-      <p>Copyright &#169; 2023 WDD130 - Emmanuel Edethu
-    </p></section>
-      <a href="https://www.instagram.com/emmanuel.ede/" target="_blank"><img src = "images/Instagram.png" alt="instagram"  ></a>
-      <a href="https://twitter.com/EmmanuelEdethu" target="_blank"><img src= "images/Twitter.png" alt ="twitter"></a>
+      <h3><a href ="site-plan.html">Site plan</a></h3>
+      <div id ="foot">
+        
+      <p>Copyright &#169; 2023 WDD130 - Saviour Emmanuel Edethu
+    </p>
+  </div>
+      <div id = "media">
+      <a   href="https://www.instagram.com/"  target = "_blank"> <img src = "images/Instagram.png" alt = "instagram" > </a>
+      <a href="https://twitter.com/" target = "_blank"> <img src= "images/Twitter.png" alt = "twitter"> </a>
+      </div>
     </footer>
+      
+    </div>
+    <script>
+      function myfunc(){
+        var y = document.getElementById("new");
+        var x = document.getElementById("fifth");
+        if (x.style.display === "none"){
+          
 
-
-  </body>
+          if (window.getComputedStyle(y).getPropertyValue('display') === "none"){
+            x.style.display = "block";
+          }
+          else{
+            x.style.display = "flex";
+          }
+        }
+        else{
+             x.style.display = "none";
+        }
+      }
+      </script>
+ 
+   </body>
 
 </html>
