@@ -85,7 +85,6 @@ header {
 p {
   font-family: "Acme", serif;
   color: var(--paragraph-color-on-white);
-  padding: 2em;
 }
 
 nav  {
@@ -262,15 +261,31 @@ footer h3 a:hover{
   text-align: center;
   
 }
+.thirdgrid h4{
+  font-size: 35px;
+}
+.thirdgrid h4{
+  font-size: 35px;
+  text-align:center;
+  padding-top:20px;
+}
+.thirdgrid p{
+  text-align: left;
+}
 .fourthgrid{
   grid-column:3/4;
   grid-row: 2/3;
   background-color:var(--secondary-color);
   color:var(--primary-color);
   padding:10px;
-  text-align: center;
+  height:100%;
   margin: 10px;
+}
+
+.fourthgrid p{
+  padding: 1.5em;
 } 
+
 .fourthgrid a{
   text-decoration: none;
   color:#FCFFF7;
@@ -323,7 +338,7 @@ footer h3 a:hover{
  /* width: 400px;*/
 
   grid-column: 2/3;
-  grid-row: 5/6;
+  grid-row: 5;
   
 
 
@@ -336,15 +351,21 @@ footer h3 a:hover{
   padding:10px;
 }
 .two h5{
+  font-size: 35px;
+  padding-top:20px;
   text-align: center;
 }
 
 .three{
   grid-column: 3/4;
-  grid-row: 5/6;
+  grid-row: 5;
   border: 5px solid var(--accent3-color);
   align-self: center;
 
+}
+.thirdgrid h5{
+  padding: 2em 0 0 0;
+  margin: 0;
 }
 #new{
   grid-row: 4/5;
@@ -391,10 +412,13 @@ ol h4{
   text-align: center;
 }
 button{
-  margin-top: 40px;
+  margin: 40px;
   color:#DB7F8E;
-  padding: 10px;
- 
+  padding: 1em;
+  border-radius:10px;
+  background-color: #fff;
+  font-size: 1em;
+  font-weight: 700;
 }
 #mydiv{
   display:none;
