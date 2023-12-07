@@ -406,6 +406,7 @@ ol h4{
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 6px;
+  margin: 0 auto;
 
 }
 .trans{
