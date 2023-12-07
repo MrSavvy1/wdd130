@@ -400,6 +400,7 @@ ol h4{
 
 /*===========================================Planets======================================*/
 .all{
+  overflow: hidden;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
@@ -409,16 +410,26 @@ ol h4{
   row-gap: 6px;
 
 }
+.trans{
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-in{
+  opacity: 1;
+  transform: translateX(0);
+}
 .all img{
   width: 80%;
   height: 80%;
   border: 5px solid #202C59;
   border-radius: 20px;
+  margin: 5px;
 }
 .first{
-  grid-column: 1/4;
-  grid-row: 1/2;
-  z-index: 1;
+ width: 100%;
+ grid-column: 1/4;
+  
 }
 #det1{
   grid-column: 1/2;
@@ -460,6 +471,15 @@ ol h4{
   grid-column: 3/4;
   grid-row: 3/4;
 }
+#note4{
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+#note5{
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
 #note6{
   grid-column: 1/4;
   margin: 0 auto;
@@ -471,10 +491,17 @@ ol h4{
   width: 30%;
   height: 60%;
 }
-#note6 p, h3{
+#note6 h3{
   text-align: center;
   padding: 5px;
   
+}
+#note6 p{
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
+  padding: 5px;
+  color:#FCFFF7;
 }
 
 section{
@@ -493,6 +520,7 @@ section p{
 h5{
   text-align: center;
 }
+
 
 /*===========================================End_Planets======================================*/
 /*===========================================Web_component======================================*/

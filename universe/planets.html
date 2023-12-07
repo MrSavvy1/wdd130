@@ -19,10 +19,10 @@
     </header>
    <main>
         <div class = "all">
-          <div class ="first"><h2> Solar Planet systems</h2></div>
-          <img id = "det1" src="images/rover.jpg" alt="planets" >
+          <div class ="trans" id ="first"><h2> Solar Planet systems</h2></div>
+          <img class ="trans" id = "det1" src="images/rover.jpg" alt="planets" >
          
-          <section id = "note1">
+          <section class ="trans" id = "note1">
             <h5>Mars Rovers:</h5>
           <p>
             Spirit and Opportunity (2004): These twin rovers explored Mars, analyzing rocks and soil to understand the planet's geological history. Spirit operated until 2010, and Opportunity until 2018.
@@ -30,8 +30,8 @@
           </p>
         </section>
 
-          <img id = "det2" src="images/spacemis.jpg" alt="planets" >
-          <section id = "note2">
+          <img class ="trans" id = "det2" src="images/spacemis.jpg" alt="planets" >
+          <section class ="trans" id = "note2">
           <h5>Pioneer 1 (1958):</h5>
           <p>
             
@@ -41,25 +41,25 @@
           </p>
           </section>
 
-          <img id = "det3" src="images/saturn.jpg" alt="planets" >
-          <section id = "note3">
+          <img class ="trans" id = "det3" src="images/saturn.jpg" alt="planets" >
+          <section class ="trans" id = "note3">
           <h5>New Horizons and Kuiper Belt</h5>
           <p>
             The New Horizons mission, spearheaded by NASA, aimed to explore the mysterious Kuiper Belt, an expansive region of the solar system beyond Neptune. Let's delve into the significance & its exploration:
             Primary Objective: Launched in 2006, with a primary mission to study Pluto.
           </p>
         </section >
-          <img id ="det4" src="images/aste.jpg" alt="planets" >
+          <img class ="trans" id ="det4" src="images/aste.jpg" alt="planets" >
        
-          <section id = "note4">
+          <section class ="trans" id = "note4">
           <h5>Asteroids and comets</h5>
           <p>
              Asteroids and cometare celestial bodies in our solar system. Asteroids are rocky, airless remnants left over from the early formation of the solar system, primarily found in the asteroid belt between Mars and Jupiter. Comets, on the other hand, are icy bodies with a nucleus of frozen gases.
         </section>
-          <img id ="det5"  src="images/spacetool.jpg" alt="planets">
-          <img id ="det6" src ="images/rover.jpg" alt="planets" >
+          <img class ="trans" id ="det5"  src="images/spacetool.jpg" alt="planets">
+          <img class ="trans" id ="det6" src ="images/rover.jpg" alt="planets" >
          
-          <section id = "note5">
+          <section class ="trans" id = "note5">
           <h5>Planets</h5>
           <p>
             Halley's Comet is one of the most famous comets and is visible from Earth approximately every 76 years. Named after astronomer Edmond Halley, who predicted its return, the last time it was visible was in 1986, and it's expected to return in 2061. Halley's Comet has been observed.
@@ -67,7 +67,7 @@
             
           </p>
         </section>
-          <section id = "note6">
+          <section class ="trans" id = "note6">
             <h3>Planets</h3>
             <img src="images/sola.jpg" alt="solar" >
         
@@ -97,23 +97,34 @@
       </footer>
       </div>
       <script>
-        function myfunc(){
-          var y = document.getElementById("new");
-          var x = document.getElementById("fifth");
-          if (x.style.display === "none"){
+        document.addEventListener('DOMContentLoaded', function() {
+          const fadeElements = document.querySelectorAll('.trans');
+
+          function fadeInElements() {
+            fadeElements.forEach(element => {
+              const elementTop = element.getBoundingClientRect().top;
+              const screenHeight = window.innerHeight;
+
+              if (elementTop < screenHeight) {
+                element.classList.add('fade-in');
+             } else {
+              element.classList.remove('fade-in');
+             }
+           }); 
+          }
+        
+          fadeInElements();
+          let lastScrollPosition = window.scrollY;
+          document.addEventListener('scroll', function() {
+            const currentScrollPosition =window.scrollY
+            if (currentScrollPosition > lastScrollPosition) {
+              fadeInElements();
+            } else {
+              fadeInElements();
+            }
             
-  
-            if (window.getComputedStyle(y).getPropertyValue('display') === "none"){
-              x.style.display = "block";
-            }
-            else{
-              x.style.display = "flex";
-            }
-          }
-          else{
-               x.style.display = "none";
-          }
-        }
+          });
+        });
         </script>
    
      </body>
