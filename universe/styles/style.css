@@ -401,9 +401,7 @@ ol h4{
 /*===========================================Planets======================================*/
 .all{
   overflow: hidden;
-  margin: 0 auto;
   justify-items: center;
-  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
@@ -426,7 +424,7 @@ ol h4{
   border-radius: 20px;
   margin: 5px;
 }
-.first{
+#first{
  width: 100%;
  grid-column: 1/4;
   
