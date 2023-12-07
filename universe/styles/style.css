@@ -407,6 +407,7 @@ ol h4{
   column-gap: 20px;
   row-gap: 6px;
   margin: 0 auto;
+  align-items: center;
 
 }
 .trans{
