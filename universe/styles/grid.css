@@ -12,39 +12,56 @@ START grid layout extra credit
 		padding-top:2em;
 		padding-bottom: 2em;
 		background-color:navy;
+		width:100vw;
 		
 }
 
 .grid1 h1 {
+		padding:10px
+		width:100%;
+
 }
 
 .grid2 {
-		bacground-color:yellow;
+		grid-column:2/11;
+		background-color:white;
+		display:grid;
+		grid-template-columns: repeat(13, 1fr);
 }
 
 .grid2 h2 {
 }
 
 .grid3 {
-		bacground-color:green;
+		grid-column:8/13;
+		background-color:green;
+		height: 100%;
+		width: 100%;
+		
 }
 
 .grid3 h3 {
 }
 
 .grid4 {
-		bacground-color:red;
+		grid-column:4/11;
+		background-color:red;
 }
 
 .grid4 h2 {
 }
 
 section {
+	grid-column:2/9;
+	display:grid;
+	grid-template-columns: repeat(13, 1fr);
+	background-color:white;
 
 }
 
 
 section h2 {
+		padding:10px;
 
 }
 
@@ -58,15 +75,15 @@ legend {
 fieldset{
 		display:grid;
 		grid-template-columns: 1fr 5fr;
-		bacground-color:#D3D3D3;
+		background-color:#D3D3D3;
 }
 
 fieldset&gt;div {
 		display: grid;
-		
+		grid-column:2/7;
 		grid-template-columns:1fr 2fr;
 		grid-gap: 0 1rem;
-		baackground-color: #f2f;
+		background-color: #f2f;
 
 }
 
