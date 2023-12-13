@@ -130,6 +130,7 @@ aside p{
   align-items: center;
 }
 
+
 #factbox img{
   width: 100%;
 }
@@ -139,6 +140,8 @@ aside p{
   border-width: 0px 10px 10px 0px;
   border-style: solid;
   border-color:#DB7F8E;
+  padding: 15px;
+  border-radius: 10px;
   
 }
 
@@ -169,6 +172,8 @@ aside p{
 
 #last aside p{
   transition: background-color 0.3s  ease-in-out;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 #last aside p:hover{
@@ -348,7 +353,7 @@ footer h3 a:hover{
   color:#DB7F8E;
   background-color:var(--secondary-color);
   border-radius: 5px;
-  padding:10px;
+  padding:20px;
 }
 .two h5{
   font-size: 35px;
@@ -500,15 +505,15 @@ ol h4{
   background-color: transparent;
   border: 0px;
   text-align: center;
-  padding: 5px;
+  padding: 15px;
   color:#FCFFF7;
 }
 
-section{
+.all section{
   margin: 0;
 }
 
-section p{
+.all section p{
   padding: 10px;
   background-color:var(--accent3-color) ;
   border-radius: 20px;
